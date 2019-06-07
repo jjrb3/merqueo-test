@@ -261,5 +261,23 @@ class InventoriesTableSeeder extends Seeder
             'quantity' => 0,
             'date' => '2019-03-01'
         ]);
+        DB::table('inventories')->insert([
+            'id' => 45,
+            'product_name' => 'No encontrado 1',
+            'quantity' => 0,
+            'date' => '2019-03-01'
+        ]);
+        DB::table('inventories')->insert([
+            'id' => 46,
+            'product_name' => 'No encontrado 2',
+            'quantity' => 0,
+            'date' => '2019-03-01'
+        ]);
+        DB::table('inventories')->insert([
+            'id' => 47,
+            'product_name' => 'No encontrado 3',
+            'quantity' => 0,
+            'date' => '2019-03-01'
+        ]);
     }
 }

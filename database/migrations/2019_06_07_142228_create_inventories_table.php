@@ -21,6 +21,9 @@ class CreateInventoriesTable extends Migration
 
             $table->unique(['product_name', 'date']);
         });
+
+        $class = new InventoriesTableSeeder();
+        $class->run();
     }
 
     /**

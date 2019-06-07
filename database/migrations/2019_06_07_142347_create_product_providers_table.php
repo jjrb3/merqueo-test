@@ -24,7 +24,7 @@ class CreateProductProvidersTable extends Migration
             $table->unique(['provider_id','invetory_id']);
         });
 
-        $class = new InventoriesTableSeeder();
+        $class = new ProductProvidersTableSeeder();
         $class->run();
     }
 
