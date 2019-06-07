@@ -11,7 +11,7 @@ class InventoryController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function getEnlistedProducs() {
+    public function getEnlistedProdutcs() {
         return response()->json(Inventory::getEnlistedProducts());
     }
 }

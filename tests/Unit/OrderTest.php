@@ -5,9 +5,8 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\Unit\LoginTest;
 
-class EnlistedProductsTest extends TestCase
+class OrderTest extends TestCase
 {
     /**
      * Login
@@ -30,13 +29,20 @@ class EnlistedProductsTest extends TestCase
 
     /**
      * Get enlisted products
+     *
+     * @return void
      */
     public function testGetEnlistedProducts()
     {
-        $this->withHeaders([
+        $response = $this->withHeaders([
             'Accept' => 'application/json',
             'Authorization' => "Bearer {$this->login()}"
-        ])->json('GET', 'api/get-enlisted-products')
-            ->assertStatus(200);
+        ])
+            ->json('GET', 'api/get-less-sold-products/2019-03-01');
+
+        dd($response);
+
+        /*$response
+            ->assertStatus(200);*/
     }
 }
