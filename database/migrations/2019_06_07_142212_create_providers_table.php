@@ -17,6 +17,9 @@ class CreateProvidersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name', 30)->nullable(false)->unique();
         });
+
+        $class = new ProvidersTableSeeder();
+        $class->run();
     }
 
     /**
