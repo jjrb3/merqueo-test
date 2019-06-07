@@ -39,7 +39,7 @@ class EnlistedProductsTest extends TestCase
             'Accept' => 'application/json',
             'Authorization' => "Bearer {$this->login()}"
         ])
-            ->json('GET', 'api/get-user');
+            ->json('GET', 'api/get-enlisted-products');
 
 
         dd($response->json());
