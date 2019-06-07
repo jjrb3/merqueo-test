@@ -11,8 +11,6 @@ class OrdersTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-
         DB::table('orders')->insert([
             'id' => 1,
             'priority' => 1,

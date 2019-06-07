@@ -22,6 +22,9 @@ class CreateQuantityProductsTable extends Migration
             $table->unsignedBigInteger('order_id');
             $table->foreign('order_id')->references('id')->on('orders');
         });
+
+        $class = new QuantityProductsTableSeeder();
+        $class->run();
     }
 
     /**
