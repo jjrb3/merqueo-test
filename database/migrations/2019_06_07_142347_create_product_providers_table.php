@@ -15,7 +15,11 @@ class CreateProductProvidersTable extends Migration
     {
         Schema::create('product_providers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->unsignedBigInteger('provider_id');
+            $table->unsignedBigInteger('invetory_id');
+            $table->foreign('provider_id')->references('id')->on('providers');
+            $table->foreign('invetory_id')->references('id')->on('inventories');
+            $table->unique(['provider_id','invetory_id']);
         });
     }
 
