@@ -15,6 +15,12 @@ class CreateQuantityProductsTable extends Migration
     {
         Schema::create('quantity_products', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('quantity')->nullable(false);
+
+            $table->unsignedBigInteger('inventory_id');
+            $table->foreign('inventory_id')->references('id')->on('inventories');
+            $table->unsignedBigInteger('order_id');
+            $table->foreign('order_id')->references('id')->on('orders');
         });
     }
 

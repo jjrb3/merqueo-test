@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="536443b0-b5b6-42fa-8362-b3216097f842" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_142142_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_07_142142_create_clients_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_142228_create_inventories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_07_142228_create_inventories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_142347_create_product_providers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_07_142347_create_product_providers_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_142408_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_07_142408_create_orders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_142420_create_quantity_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_07_142420_create_quantity_products_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,20 +55,11 @@
     <splitter split-orientation="vertical" split-proportion="0.6179775">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142347_create_product_providers_table.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="54" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142408_create_orders_table.php">
+            <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142420_create_quantity_products_table.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+                <state relative-caret-position="225">
+                  <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -105,11 +100,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142142_create_clients_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142212_create_providers_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142408_create_orders_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142347_create_product_providers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142228_create_inventories_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142408_create_orders_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142142_create_clients_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_142420_create_quantity_products_table.php" />
       </list>
     </option>
   </component>
@@ -292,7 +288,7 @@
       <workItem from="1559845016039" duration="178000" />
       <workItem from="1559845769988" duration="360000" />
       <workItem from="1559846161219" duration="830000" />
-      <workItem from="1559916354405" duration="2572000" />
+      <workItem from="1559916354405" duration="3422000" />
     </task>
     <task id="LOCAL-00001" summary="[config]: Base files.">
       <created>1559846272647</created>
@@ -329,17 +325,31 @@
       <option name="project" value="LOCAL" />
       <updated>1559918903655</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[feat]: Added orders migration.">
+      <created>1559919153804</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559919153804</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[fix]: Remove delivery date to clients.">
+      <created>1559920067666</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559920067666</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3940000" />
+    <option name="totallyTimeSpent" value="4790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -354,7 +364,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24939759" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24939759" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -373,7 +383,9 @@
     <MESSAGE value="[feat]: Added providers migration." />
     <MESSAGE value="[feat]: Added inventories migration." />
     <MESSAGE value="[feat]: Added product providers migration." />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]: Added product providers migration." />
+    <MESSAGE value="[feat]: Added orders migration." />
+    <MESSAGE value="[fix]: Remove delivery date to clients." />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]: Remove delivery date to clients." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/routes/web.php">
@@ -429,6 +441,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142142_create_clients_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142212_create_providers_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -436,31 +455,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142142_create_clients_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142228_create_inventories_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="270">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142347_create_product_providers_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="54" />
+        <state relative-caret-position="273">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142408_create_orders_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="255">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142420_create_quantity_products_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>

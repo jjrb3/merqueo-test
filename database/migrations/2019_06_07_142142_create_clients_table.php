@@ -17,6 +17,7 @@ class CreateClientsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name', 50)->nullable(false);
             $table->string('address', 50)->nullable(false);
+
             $table->unique(['name','address']);
         });
     }
