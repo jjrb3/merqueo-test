@@ -11,17 +11,17 @@ class ProvidersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('providers')->insert(array(
+        DB::table('providers')->insert([
             'id' => 1,
             'name' => 'Ruby'
-        ));
-        DB::table('providers')->insert(array(
+        ]);
+        DB::table('providers')->insert([
             'id' => 2,
             'name' => 'Raul'
-        ));
-        DB::table('providers')->insert(array(
+        ]);
+        DB::table('providers')->insert([
             'id' => 3,
             'name' => 'Angelica'
-        ));
+        ]);
     }
 }
