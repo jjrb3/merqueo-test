@@ -15,7 +15,6 @@ class CreateQuantityProductsTable extends Migration
     {
         Schema::create('quantity_products', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
         });
     }
 
