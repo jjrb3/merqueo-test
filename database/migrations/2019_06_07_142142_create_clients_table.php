@@ -20,6 +20,9 @@ class CreateClientsTable extends Migration
 
             $table->unique(['name','address']);
         });
+
+        $class = new ClientsTableSeeder();
+        $class->run();
     }
 
     /**
