@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
     {
         $options = ['cost' => 13];
 
-        DB::table('users')->insert(array(
+        DB::table('users')->insert([
             'id' => 1,
             'name' => 'Jeremy Reyes B.',
             'email' => 'jjrb6@hotmail.com',
@@ -21,9 +21,9 @@ class UsersTableSeeder extends Seeder
             'password' => password_hash("123", PASSWORD_BCRYPT, $options),
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
-        ));
+        ]);
 
-        DB::table('users')->insert(array(
+        DB::table('users')->insert([
             'id' => 2,
             'name' => 'Merqueo',
             'email' => 'test@merqueo.com',
@@ -31,6 +31,6 @@ class UsersTableSeeder extends Seeder
             'password' => password_hash("M3rqu30.", PASSWORD_BCRYPT, $options),
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
-        ));
+        ]);
     }
 }
