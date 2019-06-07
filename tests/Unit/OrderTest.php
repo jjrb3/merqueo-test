@@ -40,9 +40,7 @@ class OrderTest extends TestCase
         ])
             ->json('GET', 'api/get-less-sold-products/2019-03-01');
 
-        dd($response);
-
-        /*$response
-            ->assertStatus(200);*/
+        $response
+            ->assertStatus(200);
     }
 }
