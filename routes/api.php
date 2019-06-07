@@ -21,5 +21,6 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::get('get-user', 'Api\AuthController@getUser');
     Route::get('get-enlisted-products', 'InventoryController@getEnlistedProdutcs');
     Route::get('get-less-sold-products/{date}', 'OrderController@getLessSoldProduct');
+    Route::get('get-most-selled-products/{date}', 'OrderController@getMostSelledProduct');
 });
 

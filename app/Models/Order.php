@@ -34,4 +34,29 @@ class Order extends Model
             return $e;
         }
     }
+
+
+    /**
+     * Get less sold product
+     *
+     * @return Object \Exception
+     */
+    public static function getMostSelledProduct(string $date) {
+        try {
+            return DB::select("
+                SELECT *
+                FROM view_quantity_sold_products
+                WHERE quantity = (
+                    SELECT MAX(quantity)
+                    FROM view_quantity_sold_products
+                    WHERE delivery_date = '{$date}'
+                )
+                AND delivery_date = '{$date}'
+                ORDER BY product_name
+            ");
+        }
+        catch (\Exception $e) {
+            return $e;
+        }
+    }
 }

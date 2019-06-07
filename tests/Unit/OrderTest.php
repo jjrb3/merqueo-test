@@ -43,4 +43,22 @@ class OrderTest extends TestCase
         $response
             ->assertStatus(200);
     }
+
+
+    /**
+     * Get enlisted products
+     *
+     * @return void
+     */
+    public function testGetMostSelledProducts()
+    {
+        $response = $this->withHeaders([
+            'Accept' => 'application/json',
+            'Authorization' => "Bearer {$this->login()}"
+        ])
+            ->json('GET', 'api/get-most-selled-products/2019-03-01');
+
+        $response
+            ->assertStatus(200);
+    }
 }
