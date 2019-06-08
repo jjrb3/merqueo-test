@@ -44,4 +44,57 @@ class Inventory extends Model
             return $e;
         }
     }
+
+
+    /**
+     * Get all enlisted products greater than 0
+     *
+     * @return Object \Exception
+     */
+    public static function getProductsToPrepare() {
+        try {
+            return Inventory::select(
+                'orders.id',
+                'orders.priority',
+                'clients.address',
+                'clients.name',
+                'orders.delivery_date'
+            )
+                ->join('quantity_products', 'inventories.id', 'quantity_products.inventory_id')
+                ->join('orders', 'quantity_products.order_id', 'orders.id')
+                ->join('clients', 'orders.client_id', 'clients.id')
+
+                ->orderBy('clients.name')
+                ->get();
+        }
+        catch (\Exception $e) {
+            return $e;
+        }
+    }
+
+
+    /**
+     * Get products by order
+     *
+     * @return Object \Exception
+     */
+    public static function getProductsByOrder(int $order) {
+        try {
+            return Inventory::select(
+                'inventories.id',
+                'inventories.product_name',
+                'quantity_products.quantity'
+            )
+                ->join('quantity_products', 'inventories.id', 'quantity_products.inventory_id')
+
+                ->where('quantity_products.order_id', $order)
+
+                ->orderBy('inventories.product_name')
+                ->get();
+        }
+        catch (\Exception $e) {
+            return $e;
+        }
+    }
+
 }

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="536443b0-b5b6-42fa-8362-b3216097f842" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/Unit/InvetoriesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/OrderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/OrderTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Inventory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,12 +65,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/OrderTest.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/InvetoriesTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            <state relative-caret-position="570">
+              <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -78,25 +79,25 @@
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="83" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="83" />
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrderController.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/Inventory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="64" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="542">
+              <caret line="80" column="45" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="45" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
@@ -107,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a62e8a3-be89-4057-8c4c-a062fcdba6d4/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="373">
+              <caret line="48" selection-start-line="48" selection-end-line="54" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -148,6 +149,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -174,15 +176,16 @@
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/tests/Unit/LoginTest.php" />
-        <option value="$PROJECT_DIR$/app/Models/Inventory.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_214541_create_view_quantity_sold_products_table.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7a62e8a3-be89-4057-8c4c-a062fcdba6d4/console.sql" />
-        <option value="$PROJECT_DIR$/app/Models/Order.php" />
         <option value="$PROJECT_DIR$/tests/Unit/EnlistedProductsTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" />
         <option value="$PROJECT_DIR$/tests/Unit/OrderTest.php" />
+        <option value="$PROJECT_DIR$/app/Models/Order.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/InvetoriesTest.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7a62e8a3-be89-4057-8c4c-a062fcdba6d4/console.sql" />
+        <option value="$PROJECT_DIR$/app/Models/Inventory.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" />
       </list>
     </option>
   </component>
@@ -301,7 +304,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,22 +338,6 @@
             <path>
               <item name="merqueo-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="merqueo-test" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="merqueo-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="merqueo-test" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="merqueo-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="merqueo-test" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="merqueo-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="merqueo-test" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,6 +350,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,13 +536,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25686000" />
+    <option name="totallyTimeSpent" value="31163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22818312" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23104435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -569,14 +556,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.2939759" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" weight="0.29036143" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.3325301" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.4807229" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.3385542" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.19027181" />
+      <window_info anchor="right" id="Database" order="3" weight="0.19027181" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,6 +594,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -633,20 +634,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="[feat]: Added view in migration." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://7a62e8a3-be89-4057-8c4c-a062fcdba6d4/schema/merqueo/table/migrations">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="9e833de0-b2c7-4e5d-b4b8-25ffb57e5c7f">
@@ -753,15 +740,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://7a62e8a3-be89-4057-8c4c-a062fcdba6d4/schema/merqueo/table/clients">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9e833de0-b2c7-4e5d-b4b8-25ffb57e5c7f">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://7a62e8a3-be89-4057-8c4c-a062fcdba6d4/schema/merqueo/table/clients" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_142408_create_orders_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -857,27 +836,10 @@
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://7a62e8a3-be89-4057-8c4c-a062fcdba6d4/schema/merqueo/table/oauth_access_tokens.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://7a62e8a3-be89-4057-8c4c-a062fcdba6d4/schema/merqueo/table/inventories">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="9e833de0-b2c7-4e5d-b4b8-25ffb57e5c7f">
-          <filtering>
-            <filter text="product_name = 'Pimentón Rojo'" />
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -898,30 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Inventory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/LoginTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="83" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://7a62e8a3-be89-4057-8c4c-a062fcdba6d4/schema/merqueo/view/view_quantity_sold_products">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="9e833de0-b2c7-4e5d-b4b8-25ffb57e5c7f">
@@ -935,30 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a62e8a3-be89-4057-8c4c-a062fcdba6d4/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,9 +921,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://7a62e8a3-be89-4057-8c4c-a062fcdba6d4/schema/merqueo/table/inventories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="ce66f279-a5e8-4b02-b84b-47f30f25c37c">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.clients">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.clients</OriginalElement>
+          <nodes>
+            <node x="450.0" y="165.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.providers</node>
+            <node x="0.0" y="143.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.orders</node>
+            <node x="542.0" y="738.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.migrations</node>
+            <node x="342.125" y="319.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.product_providers</node>
+            <node x="231.0" y="143.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.inventories</node>
+            <node x="235.0" y="468.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.users</node>
+            <node x="0.0" y="898.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.password_resets</node>
+            <node x="503.0" y="468.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.oauth_auth_codes</node>
+            <node x="278.0" y="738.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.oauth_refresh_tokens</node>
+            <node x="0.0" y="738.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.oauth_personal_access_clients</node>
+            <node x="21.5" y="0.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.clients</node>
+            <node x="663.0" y="0.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.oauth_clients</node>
+            <node x="74.625" y="308.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.quantity_products</node>
+            <node x="0.0" y="468.0">7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.oauth_access_tokens</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.orders" target="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.clients">
+              <point x="0.0" y="-57.5" />
+              <point x="0.0" y="46.5" />
+            </edge>
+            <edge source="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.product_providers" target="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.inventories">
+              <point x="-57.5" y="-46.5" />
+              <point x="399.625" y="283.0" />
+              <point x="380.25" y="283.0" />
+              <point x="49.75" y="57.5" />
+            </edge>
+            <edge source="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.quantity_products" target="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.orders">
+              <point x="-59.25" y="-57.5" />
+              <point x="133.875" y="283.0" />
+              <point x="105.5" y="283.0" />
+              <point x="0.0" y="57.5" />
+            </edge>
+            <edge source="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.quantity_products" target="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.inventories">
+              <point x="59.25" y="-57.5" />
+              <point x="252.375" y="283.0" />
+              <point x="280.75" y="283.0" />
+              <point x="-49.75" y="57.5" />
+            </edge>
+            <edge source="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.product_providers" target="7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.providers">
+              <point x="57.5" y="-46.5" />
+              <point x="514.625" y="283.0" />
+              <point x="534.0" y="283.0" />
+              <point x="0.0" y="35.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8673267326732673" x="216.71232876712327" y="256.71232876712327" />
+          <SelectedNodes>
+            <node>7a62e8a3-be89-4057-8c4c-a062fcdba6d4.TABLE:merqueo.quantity_products</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/EnlistedProductsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
+        <state relative-caret-position="510">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="e#30#49#0#PHP" expanded="true" />
@@ -1017,17 +1027,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrderController.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/LoginTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="64" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="64" />
+        <state relative-caret-position="405">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/OrderTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+        <state relative-caret-position="630">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/InvetoriesTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a62e8a3-be89-4057-8c4c-a062fcdba6d4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="48" selection-start-line="48" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Inventory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="80" column="45" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="45" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
     </entry>
