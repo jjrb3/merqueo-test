@@ -61,4 +61,23 @@ class InvetoriesTest extends TestCase
         $response
             ->assertStatus(200);
     }
+
+
+    /**
+     * Get inventory for the following months
+     *
+     * @return void
+     */
+    public function testInventoryFotTheFollowingMonths()
+    {
+        $response = $this->withHeaders([
+            'Accept' => 'application/json',
+            'Authorization' => "Bearer {$this->login()}"
+        ])
+            ->json('GET', 'api/get-inventory-following-months');
+
+        dd($response);
+        $response
+            ->assertStatus(200);
+    }
 }

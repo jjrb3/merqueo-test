@@ -69,7 +69,7 @@ class Inventory extends Model
                     'clients.name',
                     'orders.delivery_date'
                 )
-                ->orderBy('priority')
+                ->orderBy('priority', 'desc')
                 ->get();
         }
         catch (\Exception $e) {
@@ -152,6 +152,35 @@ class Inventory extends Model
                 ->where('orders.id', $orderId)
 
                 ->orderBy('type')
+                ->get();
+        }
+        catch (\Exception $e) {
+            return $e;
+        }
+    }
+
+
+    /**
+     * Get inventory for the following months
+     *
+     * @return \Exception
+     */
+    public static function getInventoryFotTheFollowingMonths() {
+        try {
+            return Inventory::select(
+                'inventories.id',
+                'inventories.product_name',
+
+                DB::raw('SUM(quantity_products.quantity) - inventories.quantity AS quantity')
+            )
+                ->join('quantity_products', 'inventories.id', 'quantity_products.inventory_id')
+                ->join('orders', 'quantity_products.order_id', 'orders.id')
+
+                ->groupBy(
+                    'inventories.id',
+                    'inventories.product_name'
+                )
+                ->orderBy('inventories.product_name')
                 ->get();
         }
         catch (\Exception $e) {

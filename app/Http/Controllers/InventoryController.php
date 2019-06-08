@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inventory;
-use App\Models\Order;
 
 class InventoryController extends Controller
 {
@@ -24,6 +23,16 @@ class InventoryController extends Controller
      */
     public function getProductsToPrepareAndSupply($orderId) {
         return response()->json(Inventory::getProductsToPrepareAndSupply($orderId));
+    }
+
+
+    /**
+     * Inventory for the following months
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getInventoryFotTheFollowingMonths() {
+        return response()->json(Inventory::getInventoryFotTheFollowingMonths());
     }
 
 
