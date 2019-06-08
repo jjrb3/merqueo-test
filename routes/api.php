@@ -22,6 +22,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::get('get-enlisted-products', 'InventoryController@getEnlistedProdutcs');
     Route::get('get-products-to-prepare', 'InventoryController@getProductsToPrepare');
     Route::get('get-less-sold-products/{date}', 'OrderController@getLessSoldProduct');
+    Route::get('get-products-to-prepare-and-supply/{orderId}', 'InventoryController@getProductsToPrepareAndSupply');
     Route::get('get-most-selled-products/{date}', 'OrderController@getMostSelledProduct');
 });
 

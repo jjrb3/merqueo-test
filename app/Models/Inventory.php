@@ -97,4 +97,55 @@ class Inventory extends Model
         }
     }
 
+
+    /**
+     * Get products to prepare and supply
+     *
+     * @param int $orderId
+     * @return \Exception
+     */
+    public static function getProductsToPrepareAndSupply(int $orderId) {
+        try {
+            return Inventory::select(
+                'inventories.id',
+                'inventories.product_name',
+
+                DB::raw("
+                    CASE
+                       WHEN quantity_products.quantity > inventories.quantity THEN 'Supplied'
+                       ELSE 'Prepare'
+                    END AS type
+                "),
+                DB::raw("
+                    CASE
+                        WHEN quantity_products.quantity > inventories.quantity THEN (
+                           SELECT p.name
+                           FROM providers p
+                           INNER JOIN product_providers pp on p.id = pp.provider_id
+                           WHERE pp.invetory_id = inventories.id
+                        )
+                        ELSE ''
+                    END AS providers
+                "),
+                DB::raw("
+                    CASE
+                       WHEN quantity_products.quantity > inventories.quantity 
+                            THEN quantity_products.quantity - inventories.quantity
+                            
+                       ELSE quantity_products.quantity
+                    END AS quantity
+                ")
+            )
+                ->join('quantity_products', 'inventories.id', 'quantity_products.inventory_id')
+                ->join('orders', 'quantity_products.order_id', 'orders.id')
+
+                ->where('orders.id', $orderId)
+
+                ->orderBy('type')
+                ->get();
+        }
+        catch (\Exception $e) {
+            return $e;
+        }
+    }
 }

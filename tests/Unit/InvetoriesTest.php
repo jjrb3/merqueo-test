@@ -43,4 +43,22 @@ class InvetoriesTest extends TestCase
         $response
             ->assertStatus(200);
     }
+
+
+    /**
+     * Get products to prepare and supply
+     *
+     * @return void
+     */
+    public function testProductsToPrepareAndSupply()
+    {
+        $response = $this->withHeaders([
+            'Accept' => 'application/json',
+            'Authorization' => "Bearer {$this->login()}"
+        ])
+            ->json('GET', 'api/get-products-to-prepare-and-supply/4');
+
+        $response
+            ->assertStatus(200);
+    }
 }

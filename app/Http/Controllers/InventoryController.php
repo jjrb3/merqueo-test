@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inventory;
+use App\Models\Order;
 
 class InventoryController extends Controller
 {
@@ -13,6 +14,16 @@ class InventoryController extends Controller
      */
     public function getEnlistedProdutcs() {
         return response()->json(Inventory::getEnlistedProducts());
+    }
+
+
+    /**
+     * Products to prepare and supply
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getProductsToPrepareAndSupply($orderId) {
+        return response()->json(Inventory::getProductsToPrepareAndSupply($orderId));
     }
 
 
