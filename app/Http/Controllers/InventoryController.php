@@ -32,7 +32,7 @@ class InventoryController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function getInventoryFotTheFollowingMonths() {
-        return response()->json(Inventory::getInventoryFotTheFollowingMonths());
+        return response()->json(Inventory::getInventoryForTheFollowingMonths());
     }
 
 

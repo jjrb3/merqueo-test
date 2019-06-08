@@ -165,7 +165,7 @@ class Inventory extends Model
      *
      * @return \Exception
      */
-    public static function getInventoryFotTheFollowingMonths() {
+    public static function getInventoryForTheFollowingMonths() {
         try {
             return Inventory::select(
                 'inventories.id',
