@@ -50,7 +50,7 @@ class InventoryController extends Controller
 
         return $orders->transform(function($item) {
 
-            $item->products = Inventory::getProductsByOrder($item->id);
+            $item->products = Inventory::getProductsByOrders($item->orders_id);
 
             return $item;
         });

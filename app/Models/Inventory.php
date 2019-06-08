@@ -54,17 +54,22 @@ class Inventory extends Model
     public static function getProductsToPrepare() {
         try {
             return Inventory::select(
-                'orders.id',
-                'orders.priority',
                 'clients.address',
                 'clients.name',
-                'orders.delivery_date'
+                'orders.delivery_date',
+                DB::raw('MAX(orders.priority) AS priority'),
+                DB::raw('GROUP_CONCAT(DISTINCT quantity_products.order_id) AS orders_id')
             )
                 ->join('quantity_products', 'inventories.id', 'quantity_products.inventory_id')
                 ->join('orders', 'quantity_products.order_id', 'orders.id')
                 ->join('clients', 'orders.client_id', 'clients.id')
 
-                ->orderBy('clients.name')
+                ->groupBy(
+                    'clients.address',
+                    'clients.name',
+                    'orders.delivery_date'
+                )
+                ->orderBy('priority')
                 ->get();
         }
         catch (\Exception $e) {
@@ -78,16 +83,21 @@ class Inventory extends Model
      *
      * @return Object \Exception
      */
-    public static function getProductsByOrder(int $order) {
+    public static function getProductsByOrders(string $order) {
         try {
             return Inventory::select(
                 'inventories.id',
                 'inventories.product_name',
-                'quantity_products.quantity'
+                DB::raw('SUM(quantity_products.quantity) AS quantity')
             )
                 ->join('quantity_products', 'inventories.id', 'quantity_products.inventory_id')
 
-                ->where('quantity_products.order_id', $order)
+                ->whereIn('quantity_products.order_id', explode(',', $order))
+
+                ->groupBy(
+                    'inventories.id',
+                    'inventories.product_name'
+                )
 
                 ->orderBy('inventories.product_name')
                 ->get();
